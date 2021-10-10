@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Actividad Obligatoria 8</title>
+        <style>
+            body {
+                text-align: center;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                background-color:rgba(58, 58, 122, 0.467);
+            }
+            h2{
+                text-align: center;
+            }
+            form{
+                background-color: #F99;
+                width: 18%;
+                margin: auto;
+                border: 2px #F30 dashed;
+                padding: 15px;
+            }
+            .us {
+                margin-bottom: 10px;
+            }
+            .cl {
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2><b>Ingreso al Sistema</b></h2>
+        <section>    
+            <form id="formulario" method="get">
+                <div>
+                    <div class="us">
+                        <label for="usuario">Usuario:</label>
+                        <input type="text" id="usuario"  required>
+                    </div>
+                </div>
+                <div>
+                    <div class="cl">
+                        <label for="clave">Clave:&nbsp;&nbsp;&nbsp;</label>
+                        <input type="password" id="clave">
+                    </div>
+                </div>            
+                    <div>
+                        <button type="submit" id="btn" onclick="validar(formulario).value">Ingresar</button>
+                    </div>
+                </div> 
+                <script src="control.js"></script>   
+            </form>
+        </section>    
+    </body>
+</html>
